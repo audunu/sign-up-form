@@ -1,4 +1,13 @@
 
+@font-face {
+  font-family: 'norsebold';
+  src: url('norse-bold-webfont.woff2') format('woff2'),
+       url('norse-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 
 * {
     margin: 0;
@@ -6,10 +15,17 @@
     box-sizing: border-box;
   }
 
+.odin {
+  font-family: norse-bold;
+  margin-top: 25px;
+  
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: 0.4fr 0.6fr;
     grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-rows:min-content;
     height: 100vh;
     width: 100vw;
 }
@@ -26,12 +42,29 @@
 
 .grid-item-2 {
     padding: 140px 40px 40px 40px;
-    font-size: 1.5rem;
+    font-size: 1rem;
+}
+
+.grid-item-3 {
+  font-size: small;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+} 
+
+.grid-item-4 {
+  padding: 40px;
+}
+
+button {
+  padding: 7px;
 }
 
 .logo-container {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
     height: 20%;
     position: absolute;
@@ -39,6 +72,8 @@
     color: white;
     font-weight: 900;
     font-size: 40px;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 6rem;
 }
 
 img {
@@ -49,65 +84,23 @@ img {
 
 
 .form {
-    background-color: #F6F7F8;
-    border: 1px solid #D6D9DC;
-    border-radius: 3px;    
+    background-color: white;
     width: 80%;
+    
     padding: 50px;
     margin: 0 0 40px 0;
       
 }
 
-.form-row-1 {
-    display: flex;
-    flex-wrap: wrap;
-}
-.form-row-1-1 {
-    margin-bottom: 40px;
-    display: inline-block;
-  }
-
-  .form-row-1-2 {
-    margin-bottom: 40px;
-    display: inline-block;
-  } 
-
-  .form-row-2 {
+  .form-row-2, .form-row-1, .form-row-3 {
       display: flex;
       flex-wrap: wrap;
+      gap: 50px;
   }
-  .form-row-2-1 {
-    margin-bottom: 40px;
+  .form-row-1-1, .form-row-1-2, .form-row-2-1, .form-row-2-2, .form-row-3-1, .form-row-3-2 {
+    margin-bottom: 15px;
     display: inline-block;
   }
-
-  .form-row-2-2 {
-    margin-bottom: 40px;
-    display: inline-block;
-  }
-  
-  .form-row-3 {
-    display: flex;
-    flex-wrap: wrap;
-  
-    /*   margin-bottom: 40px;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px; */
-  }
-
-  .form-row-3-1 {
-    margin-bottom: 40px;
-    display: inline-block;
-  }
-
-  .form-row-3-2 {
-    margin-bottom: 40px;
-    display: inline-block;
-  }
-
 
   label {
       display: block;
@@ -118,6 +111,8 @@ img {
         border: 1px solid #D6D9DC;
         border-radius: 3px;
         padding: 7px;
-        font-size: 14px;
+        font-size: 12px;
         display: block;
+        width: 200px;
+        
   }
