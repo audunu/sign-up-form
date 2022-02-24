@@ -17,11 +17,7 @@
     box-sizing: border-box;
   }
 
-.odin {
-  font-family: norse-bold;
-  margin-top: 25px;
-  
-}
+
 
 .grid-container {
     display: grid;
@@ -82,13 +78,9 @@ img {
     height: 80%;
 }
 
-
-
-
 .form {
     background-color: white;
     width: 80%;
-    
     padding-top: 20px;
     margin: 0 0 40px 0;
       

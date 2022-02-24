@@ -99,7 +99,7 @@
 
 input {
     background-color: #FFFFFF;
-    border: 1px solid #D6D9DC;
+    border: 1px solid #E5E7EB;
     border-radius: 3px;
     padding: 3px;
     font-size: 8px;
@@ -117,10 +117,15 @@ input {
 }
 
 button {
-    background-color: green;
+    background-color: #596D48;
     border-radius: 5px;
     color: white;
     padding: 5px 40px;
     font-size: 0.7rem;
 }
 
+input[type=text]:focus {
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 255, .2);
+    outline-color: blue;
+    outline-width: 0.5px;
+}
