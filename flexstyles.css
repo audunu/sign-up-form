@@ -1,0 +1,126 @@
+
+
+@font-face {
+    font-family: 'norsebold';
+    src: url('norse-bold-webfont.woff2') format('woff2'),
+         url('norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .container {
+      display: flex;
+      width: 100vw;
+      height: 100vh;
+      align-items: center;
+      background-color: black;
+  }
+
+
+.section-1 {
+    flex: 0 1 auto;
+    width: 40%;
+    height: 80vh;
+    background-image: url("background.jpeg");
+    padding-top: 130px;
+}
+
+.logo-container {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  .odin {
+    font-family: norse-bold;
+    color: white;
+    font-size: 70px;
+    font-weight: normal;
+    margin-top: 20px;
+  }
+
+  img {
+    height: 80%;
+}
+
+.section-2 {
+    flex: 0 1 auto;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+}
+
+.section-2-1 {
+    background-color: lightcyan;
+}
+
+.section-2-2 {
+    background-color: white;
+    font-weight: normal;
+}
+
+.section-2-3 {
+    background-color: azure;
+    border-top: 4px solid rgb(221, 218, 218);
+    font-size: 0.8rem;
+    font-weight: normal;
+}
+
+.subsection {
+    padding: 15px 30px;
+}
+
+.section-2-2 > div {
+    font-size: 1.5rem;
+    margin-bottom: 15px;    
+}
+
+.section-2-3 > div {
+    margin-top: 25px;    
+}
+
+
+.section-2 .subsection {
+    height: 33.33%;
+}
+
+input {
+    background-color: #FFFFFF;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    padding: 3px;
+    font-size: 8px;
+    display: block;
+    width: 200px;
+    
+}
+
+.form-row-2, .form-row-1, .form-row-3 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    font-size: 0.7rem;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 40px;
+    font-size: 0.7rem;
+}
+
