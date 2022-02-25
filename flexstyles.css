@@ -13,6 +13,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
   }
 
   .container {
@@ -23,12 +24,16 @@
       background-color: black;
   }
 
+form {
+    margin-top: 20px;
+}  
 
 .section-1 {
     flex: 0 1 auto;
     width: 40%;
     height: 80vh;
     background-image: url("background.jpeg");
+    background-position: center;    
     padding-top: 130px;
 }
 
@@ -59,7 +64,7 @@
     flex-direction: column;
     height: 80vh;
     font-size: 1.2rem;
-    font-weight: bold;
+    font-weight: nomrmal;
 
 }
 
@@ -70,6 +75,7 @@
 .section-2-2 {
     background-color: white;
     font-weight: normal;
+    
 }
 
 .section-2-3 {
@@ -86,6 +92,7 @@
 .section-2-2 > div {
     font-size: 1.5rem;
     margin-bottom: 15px;    
+    margin-top: 10px;
 }
 
 .section-2-3 > div {
@@ -102,7 +109,7 @@ input {
     border: 1px solid #E5E7EB;
     border-radius: 3px;
     padding: 3px;
-    font-size: 8px;
+    font-size: 12px;
     display: block;
     width: 200px;
     
@@ -124,8 +131,14 @@ button {
     font-size: 0.7rem;
 }
 
-input[type=text]:focus {
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus {
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 255, .2);
-    outline-color: blue;
-    outline-width: 0.5px;
+    outline: none;
+    border: solid 1px rgb(0, 119, 255, 0.7);
+}
+
+.feedback-message {
+    font-size: 0.6rem;
+    color: red;
+    visibility: visible;
 }
